@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+
+html, body {
+  height: 100%; }
+
+figure, h5, h3 {
+  margin: 0; }
+
+span {
+  display: block; }
+
+.hr {
+  height: 1px;
+  background-color: #2C2541;
+  margin: 10px; }
+
+/* NAV LINK DROPDOWN */
+.online-square {
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: #1be41b;
+  margin-right: 5px; }
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #4B367C;
+  /* SEARCH */
+  /* USER */ }
+  nav .brand {
+    cursor: pointer; }
+    nav .brand figure {
+      padding-left: 15px;
+      padding-right: 15px; }
+      nav .brand figure svg {
+        color: #4B367C; }
+  nav .links {
+    display: flex;
+    align-items: center; }
+    nav .links a {
+      text-decoration: none;
+      color: #FFF;
+      opacity: 0.8;
+      margin: 0 15px;
+      font-size: 14px; }
+      nav .links a:hover {
+        opacity: 1; }
+  nav .links-dropdown {
+    margin-right: 15px;
+    /* open dropdown */
+    position: relative; }
+    nav .links-dropdown > span {
+      color: #FFF;
+      cursor: pointer;
+      padding: 6px 7px; }
+      nav .links-dropdown > span:hover {
+        background-color: #ffffff17; }
+    nav .links-dropdown div {
+      position: absolute;
+      right: -170px;
+      top: 40px;
+      flex-direction: column;
+      background-color: #FFF;
+      padding: 10px;
+      width: 180px;
+      border-radius: 2px;
+      box-shadow: 0 0 2px #00000078; }
+      nav .links-dropdown div a {
+        margin: 0;
+        color: #000;
+        padding: 6px 8px;
+        font-size: 13px; }
+        nav .links-dropdown div a:hover {
+          background: #7D5BBE;
+          color: #FFF; }
+  nav .search {
+    position: relative;
+    display: flex;
+    /* search icon */ }
+    nav .search span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 8px;
+      font-size: 14px;
+      display: flex;
+      color: #6E6779; }
+    nav .search input {
+      border: none;
+      padding: 7px 0;
+      padding-left: 30px;
+      font-size: 12px;
+      width: 300px; }
+  nav .user-related {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    /* PRIME LOOT AND NOTIFICATIONS */
+    /* USER NOTIFICATIONs */ }
+    nav .user-related .prime-loot-notifications {
+      margin-left: auto;
+      display: flex;
+      position: relative;
+      /*PRIME LOOT */ }
+      nav .user-related .prime-loot-notifications .prime-loot-dropdown {
+        position: absolute;
+        top: 40px;
+        left: -168.81px;
+        flex-direction: column;
+        background-color: #FFF;
+        padding: 10px;
+        width: 180px;
+        border-radius: 2px; }
+      nav .user-related .prime-loot-notifications > div {
+        padding: 6px;
+        margin: 0 6px;
+        cursor: pointer; }
+        nav .user-related .prime-loot-notifications > div:hover {
+          background-color: #ffffff0d; }
+        nav .user-related .prime-loot-notifications > div svg {
+          height: 1.2em;
+          width: 1.2em;
+          color: #FFF; }
+    nav .user-related .notifications {
+      position: relative; }
+      nav .user-related .notifications .notifications-dropdown {
+        position: absolute;
+        top: 45px;
+        left: -328.81px;
+        flex-direction: column;
+        background-color: #FAF9FA;
+        padding: 10px;
+        width: 340px;
+        border-radius: 2px; }
+        nav .user-related .notifications .notifications-dropdown .notifications-dropdown-options {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          /* mark all as read */ }
+          nav .user-related .notifications .notifications-dropdown .notifications-dropdown-options > h5 {
+            color: #7E7888;
+            font-size: 12px; }
+          nav .user-related .notifications .notifications-dropdown .notifications-dropdown-options > span {
+            font-size: 11px;
+            color: #4B367C;
+            padding: 5px 8px; }
+            nav .user-related .notifications .notifications-dropdown .notifications-dropdown-options > span:hover {
+              background-color: #e9e9e9;
+              color: gray; }
+    nav .user-related .user {
+      position: relative;
+      display: flex;
+      padding: 8px;
+      width: 220px;
+      z-index: 99999;
+      background: #4b367c;
+      cursor: pointer;
+      /* ARROW */
+      /* PROFILE IMG */ }
+      nav .user-related .user > div:nth-child(2) {
+        margin-left: 10px;
+        /* USERNAME */
+        /* STATUS EX: STREAMING CREATIVE */ }
+        nav .user-related .user > div:nth-child(2) h5 {
+          color: #FFF;
+          font-weight: 300;
+          opacity: 0.8; }
+        nav .user-related .user > div:nth-child(2) > span {
+          display: flex;
+          align-items: center;
+          color: #ffffff96;
+          font-weight: 300;
+          font-size: 11px; }
+      nav .user-related .user .user-arrow-dropdown {
+        position: absolute;
+        display: flex;
+        right: 10px;
+        top: 50%;
+        color: #FFF;
+        opacity: 0.8;
+        transition: 0.2s; }
+      nav .user-related .user img {
+        width: 35px;
+        height: 35px; }
+
+/* SETTINGS DROPDOWN */
+.user-settings-dropdown {
+  position: absolute;
+  width: 236px;
+  background-color: #201C2B;
+  padding: 10px 0;
+  transition: 0.2s;
+  height: 496.688px;
+  top: 51px;
+  right: 0;
+  /* USER QUICK SETTINGS */ }
+  .user-settings-dropdown .normal {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    color: #a0a0a0;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer; }
+    .user-settings-dropdown .normal:hover {
+      background-color: #7D5BBE; }
+    .user-settings-dropdown .normal svg {
+      color: #B8B5C0;
+      margin-right: 10px;
+      height: 1.2em;
+      width: 1.2em; }
+  .user-settings-dropdown .user-quick-settings {
+    background-color: #17141F;
+    /* USER SHARE ACTIVITIEs */ }
+    .user-settings-dropdown .user-quick-settings .checkbox {
+      margin: 0;
+      margin-right: 5px;
+      height: 15px;
+      width: 15px;
+      background: black;
+      display: block; }
+    .user-settings-dropdown .user-quick-settings > span {
+      color: #FFF;
+      font-weight: 300;
+      font-size: 13px;
+      padding-left: 20px; }
+      .user-settings-dropdown .user-quick-settings > span svg {
+        margin-right: 10px;
+        height: 1.4em;
+        width: 1.4em; }
+    .user-settings-dropdown .user-quick-settings .invisible {
+      color: #ffffff87; }
+    .user-settings-dropdown .user-quick-settings .share-activity {
+      color: #ffffff87;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .user-settings-dropdown .user-quick-settings .share-activity div {
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        color: #FFF;
+        margin-bottom: 5px;
+        margin-top: 5px; }
+    .user-settings-dropdown .user-quick-settings .dark-mode {
+      display: flex;
+      padding-bottom: 20px; }
+    .user-settings-dropdown .user-quick-settings > span {
+      display: flex;
+      align-items: center; }
+
+/* SIDEBAR */
+.streaming-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red; }
+
+#sidebar {
+  width: 240px;
+  background: #17141f;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 51px;
+  /* FOLLOWED CHANNELS DIV */
+  /* followed channels */
+  /* CHANNEL */ }
+  #sidebar > h3 {
+    font-weight: 300;
+    color: #b0aabf;
+    font-size: 14px;
+    margin-left: 10px;
+    padding-top: 20px; }
+  #sidebar .channel {
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+    /* first text */ }
+    #sidebar .channel:hover {
+      background: #614f8b70; }
+    #sidebar .channel:hover > div > h3 {
+      opacity: 0.8; }
+    #sidebar .channel:hover > div > div > h3 {
+      opacity: 0.8; }
+    #sidebar .channel:hover > div > div > div span {
+      opacity: 0.8; }
+    #sidebar .channel .img {
+      width: 30px;
+      height: 30px;
+      background-image: url("https://static-cdn.jtvnw.net/jtv_user_pictures/3a736f85-ccad-4608-9a21-d110411023ab-profile_image-70x70.jpg");
+      background-position: center;
+      background-size: cover; }
+    #sidebar .channel > div {
+      padding-left: 10px;
+      width: 100%; }
+      #sidebar .channel > div > h3 {
+        font-size: 14px;
+        color: #FFF;
+        font-weight: 300;
+        opacity: 0.7;
+        margin-bottom: 2px; }
+    #sidebar .channel > div > div {
+      display: flex;
+      justify-content: space-between; }
+      #sidebar .channel > div > div h3 {
+        font-size: 12px;
+        color: #FFF;
+        font-weight: 300;
+        opacity: 0.6;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 140px;
+        height: 1.2em;
+        white-space: nowrap; }
+    #sidebar .channel > div > div > div {
+      display: flex;
+      align-items: center; }
+      #sidebar .channel > div > div > div span {
+        color: #FFF;
+        opacity: 0.6;
+        font-size: 12px;
+        margin-left: 3px; }
+
+/*# sourceMappingURL=style.css.map */
